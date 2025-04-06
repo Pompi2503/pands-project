@@ -10,4 +10,11 @@ Irish Dataset is one of the oldset and simple dataset used for exploratory data 
  - jupyter notebook
  - Python libraries
 
+ # Purpose
+
+ # Project Plan
+
+ # References
+ - 
+
 
