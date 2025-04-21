@@ -1,0 +1,5 @@
+Python 13.1
+Matplotlib
+seaborn
+Pandas
+Os
