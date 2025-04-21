@@ -5,9 +5,16 @@
 import pandas as pd
 # import seadborn which is used for statistical visualisation and based on matplotlib
 # (https://seaborn.pydata.org/)
+
 import seaborn as sns
+# Import Matplotlib for plotting, saving plots (https://matplotlib.org/)
 import matplotlib.pyplot as plt
+
+# Import Itertools used for effecient looping (https://docs.python.org/3/library/itertools.html)
 import itertools
+
+# Import python library os to interact with operating system. To create directories to save output file
+# (https://docs.python.org/3/library/os.html)
 import os
 
 # Load dataset
