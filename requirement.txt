@@ -3,3 +3,4 @@ Matplotlib
 seaborn
 Pandas
 Os
+jupyter notebook
