@@ -48,7 +48,7 @@ pands-project/
 # How to Run the project
 1. Download the project from GitHub:
 ```bash
-git clone 
+git clone https://github.com/Pompi2503/pands-project
 cd pands-project
 ```
 2. Install the necessary libraries:
