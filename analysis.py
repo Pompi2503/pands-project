@@ -1,7 +1,10 @@
 # analysis.py
 # Author Deepika Gusain
 
+# Import pandas library, which is used for data manipulation (https://pandas.pydata.org/)
 import pandas as pd
+# import seadborn which is used for statistical visualisation and based on matplotlib
+# (https://seaborn.pydata.org/)
 import seaborn as sns
 import matplotlib.pyplot as plt
 import itertools
