@@ -51,7 +51,7 @@ pands-project/
 git clone https://github.com/Pompi2503/pands-project
 cd pands-project
 ```
-2. Install the necessary libraries:
+2. Install the necessary dependencies:
 ```bash
 pip install -r requirements.txt
 ```
