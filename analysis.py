@@ -17,13 +17,17 @@ import itertools
 # (https://docs.python.org/3/library/os.html)
 import os
 
-# Load dataset
+# This code will load iris dataset from seaborn which is inbuilt.
+# Dataset contain three target classes with measurement of data on petel/sepal lenght/width
+# (https://seaborn.pydata.org/generated/seaborn.load_dataset.html)
 iris = sns.load_dataset('iris')
 
-# Save to CSV (if needed)
+# code will save Dataframe iris to csv, index=false will prevent row indices to the file
+# (https://www.geeksforgeeks.org/how-to-export-pandas-dataframe-to-a-csv-file/)
 iris.to_csv('iris.csv', index=False)
 
-# Create output directories
+# mkdir from os library is used to create directory and will not throw error if it exists.
+# (https://www.geeksforgeeks.org/python-os-makedirs-method/)
 os.makedirs('plots', exist_ok=True)
 
 # Summary stats
