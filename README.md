@@ -7,7 +7,7 @@ Exploring the Iris flower Dataset using Python - Project For Programming and Scr
 
 # Project Overview
 This project focusses on examinin the well-known Iris flowere dataset by utilizing Python.
-It demonstrates how scripting toolds can be applied to carry out souring, pre-processing and visuation of the data which are integral part of the data analysis. The work on the project involves gathering insight from the existing Iris dataaset, generating visual, and explainaing finding through structured programming and clear documentation.
+It demonstrates how scripting tools can be applied to carry out sourcing, pre-processing and visuation of the data which are integral part of the data analysis. The work on the project involves gathering insight from the existing Iris dataaset, generating visual, and explainaing finding through structured programming and clear documentation.
 
 
 # Dataset Background
