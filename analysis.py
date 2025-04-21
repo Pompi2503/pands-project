@@ -30,21 +30,35 @@ iris.to_csv('iris.csv', index=False)
 # (https://www.geeksforgeeks.org/python-os-makedirs-method/)
 os.makedirs('plots', exist_ok=True)
 
-# Summary stats
+# Describe method from Pandas will summarize numerical column and store in var summary (count,mean,std,max and min)
+# (https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.describe.html)
 summary = iris.describe()
+
+# code line will save summary to a tab separated txt file
+# (https://www.w3resource.com/python-exercises/pandas/python-pandas-data-frame-exercise-27.php)
 summary.to_csv('variable_summary.txt', sep='\t')
 
-# Histograms
+# Plotting histograms
+# For loop will iterate over all columns except last one which is species
+# (https://www.w3schools.com/python/python_for_loops.asp)
 for column in iris.columns[:-1]:
+# initialise a new figure (https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.figure.html)
     plt.figure()
+# plots histogram using seaborn (https://seaborn.pydata.org/generated/seaborn.histplot.html)
     sns.histplot(iris[column], kde=True, bins=20)
+# plot title for the plot (https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.title.html)
     plt.title(f'Histogram of {column}')
+# save fig as png file (https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.savefig.html)
     plt.savefig(f'plots/histogram_{column}.png')
+# close figure to preven memory issues in loop (https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.close.html)
     plt.close()
 
-# Scatter plots for all pairs
+# This codeline will plot scatter plot for paired features visualisation
+# for loop is run to generate possible pair of the features on the dataset
+# (https://docs.python.org/3/library/itertools.html)
 for x, y in itertools.combinations(iris.columns[:-1], 2):
     plt.figure()
+# this line will create scatter plot with color added to the species (https://seaborn.pydata.org/generated/seaborn.scatterplot.html)
     sns.scatterplot(data=iris, x=x, y=y, hue='species')
     plt.title(f'Scatter Plot: {x} vs {y}')
     plt.savefig(f'plots/scatter_{x}_vs_{y}.png')
