@@ -1,6 +1,6 @@
 Python 13.1
 Matplotlib
-seaborn
+Seaborn
 Pandas
 Os
 jupyter notebook
