@@ -2,5 +2,4 @@ Python 13.1
 Matplotlib
 Seaborn
 Pandas
-Os
 jupyter notebook
